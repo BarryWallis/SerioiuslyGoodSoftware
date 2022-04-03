@@ -1,9 +1,9 @@
 ﻿
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Novice;
+using Reference;
 
-namespace NoviceTests;
+namespace ReferenceTests;
 
 [TestClass]
 public class ContainerTests

@@ -1,9 +1,7 @@
 ﻿namespace Novice;
-public class Container
+public class Container : IContainer
 {
-    /// <summary>
-    /// The group of connected containers.
-    /// </summary>
+    /// <inheritdoc/>
     private readonly Container[] _g;
 
     /// <summary>
@@ -11,9 +9,7 @@ public class Container
     /// </summary>
     private int _n;
 
-    /// <summary>
-    /// The water amount in this container.
-    /// </summary>
+    /// <inheritdoc/>
     public double Amount { get; private set; }
 
     /// <summary>
@@ -30,10 +26,7 @@ public class Container
         Amount = 0;
     }
 
-    /// <summary>
-    /// Add water to the container.
-    /// </summary>
-    /// <param name="x">The amount of water to add.</param>
+    /// <inheritdoc/>
     public void AddWater(double x)
     {
         double y = x / _n;
@@ -43,10 +36,7 @@ public class Container
         }
     }
 
-    /// <summary>
-    /// Connect this <see cref="Container"/> to the given <see cref="Container"/>.
-    /// </summary>
-    /// <param name="c">The <see cref="Container"/> to connect to this one.</param>
+    /// <inheritdoc/>
     public void ConnectTo(Container c)
     {
         // Amount per container
