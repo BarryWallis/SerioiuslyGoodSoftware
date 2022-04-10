@@ -1,4 +1,4 @@
-﻿namespace Reference;
+﻿namespace ReferenceLib;
 
 /// <summary>
 /// A water container.
@@ -18,19 +18,16 @@ public class Container : IContainer
     /// </summary>
     public Container() => _ = _containers.Add(this); // Start with this cotainer.
 
-    /// <summary>
-    /// Connect a <see cref="Container"/> to this one.
-    /// </summary>
-    /// <param name="other">The <see cref="Container"/> to connect.</param>
+    /// <inheritdoc/>
     public void ConnectTo(Container other)
     {
-        // If the two Containers are already connect, don't doi anything.
+        // If the two Containers are already connected, don't do anything.
         if (_containers.SetEquals(other._containers))
         {
             return;
         }
 
-        // Computer the new amount of water in each container
+        // Compute the new amount of water in each container
         int size1 = _containers.Count;
         int size2 = other._containers.Count;
         double total1 = Amount * size1;

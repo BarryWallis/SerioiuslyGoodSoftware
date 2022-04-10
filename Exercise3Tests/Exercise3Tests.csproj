@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ReferenceLib\ReferenceLib.csproj" />
+    <ProjectReference Include="..\Chapter03\Exercise3Lib\Exercise3Lib.csproj" />
   </ItemGroup>
 
 </Project>

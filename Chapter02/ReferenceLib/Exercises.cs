@@ -1,4 +1,4 @@
-﻿namespace Reference;
+﻿namespace ReferenceLib;
 public static class Exercises
 {
     public static int[,] IdentityMatrix1(int n)

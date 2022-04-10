@@ -1,9 +1,8 @@
-﻿
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using ReferenceLib;
+using Speed2;
 
-namespace ReferenceTests;
+namespace Speed2Tests;
 
 [TestClass]
 public class ContainerTests
@@ -26,6 +25,25 @@ public class ContainerTests
         double actual = container.Amount;
 
         Assert.AreEqual(0, actual);
+    }
+
+    [TestMethod]
+    public void GroupSize_GroupOfThreeContainers_ReturnsThree()
+    {
+        Container container1 = new();
+        Container container2 = new();
+        Container container3 = new();
+        const int expected = 3;
+        container1.ConnectTo(container2);
+        container2.ConnectTo(container3);
+
+        int actual1 = container1.GroupSize;
+        int actual2 = container2.GroupSize;
+        int actual3 = container3.GroupSize;
+
+        Assert.AreEqual(expected, actual1);
+        Assert.AreEqual(expected, actual2);
+        Assert.AreEqual(expected, actual3);
     }
 
     [TestMethod]
@@ -104,5 +122,45 @@ public class ContainerTests
         Assert.AreEqual(totalAmount / 4, container2.Amount);
         Assert.AreEqual(totalAmount / 4, container3.Amount);
         Assert.AreEqual(totalAmount / 4, container4.Amount);
+    }
+
+    [TestMethod]
+    public void Flush_AnyContainer_NoWaterInAnyContainersInGroup()
+    {
+        Container container1 = new();
+        Container container2 = new();
+        Container container3 = new();
+        const double expected = 0.0;
+        container1.AddWater(10);
+        container1.ConnectTo(container2);
+        container2.ConnectTo(container3);
+
+        container2.Flush();
+        double actual1 = container1.Amount;
+        double actual2 = container2.Amount;
+        double actual3 = container3.Amount;
+
+        Assert.AreEqual(expected, actual1);
+        Assert.AreEqual(expected, actual2);
+        Assert.AreEqual(expected, actual3);
+    }
+
+    [TestMethod]
+    public void UseCaseTest()
+    {
+        Container containerA = new();
+        Container containerB = new();
+        Container containerC = new();
+        Container containerD = new();
+
+        containerA.AddWater(12);
+        containerD.AddWater(8);
+        containerA.ConnectTo(containerB);
+        containerB.ConnectTo(containerC);
+
+        Assert.AreEqual(4, containerA.Amount);
+        Assert.AreEqual(4, containerB.Amount);
+        Assert.AreEqual(4, containerC.Amount);
+        Assert.AreEqual(8, containerD.Amount);
     }
 }

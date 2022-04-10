@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ReferenceLib\ReferenceLib.csproj" />
+    <ProjectReference Include="..\Speed1\Speed1.csproj" />
   </ItemGroup>
 
 </Project>

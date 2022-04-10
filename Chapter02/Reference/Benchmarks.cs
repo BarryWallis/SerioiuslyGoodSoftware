@@ -1,7 +1,9 @@
 ﻿
 using BenchmarkDotNet.Attributes;
 
-namespace Reference;
+using ReferenceLib;
+
+namespace ReferenceApp;
 public class Benchmarks
 {
     [Params(32000)]

@@ -1,4 +1,4 @@
-﻿namespace Reference;
+﻿namespace ReferenceLib;
 /// <summary>
 /// Create a new <see cref="User"/> with the given <paramref name="Name"/>.
 /// </summary>

@@ -2,7 +2,7 @@
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using Reference;
+using ReferenceLib;
 
 namespace ReferenceTests;
 
