@@ -52,10 +52,26 @@ public class Appliance
     /// <summary>
     /// Turn on the <see cref="Appliance"/> and notify the attached grid (if there is one).
     /// </summary>
-    public void On() => IsOn = true;
+    public void On()
+    {
+        if (IsOff && _grid is not null)
+        {
+            _grid.ApplianceIsTurnedOn(this);
+        }
+
+        IsOn = true;
+    }
 
     /// <summary>
     /// Turn off the <see cref="Appliance"/> and notify the attached grid (if there is one).
     /// </summary>
-    public void Off() => IsOn = false;
+    public void Off()
+    {
+        if (IsOn && _grid is not null)
+        {
+            _grid.ApplianceIsTurnedOff(this);
+        }
+
+        IsOn = false;
+    }
 }

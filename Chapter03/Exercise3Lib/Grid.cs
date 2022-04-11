@@ -10,27 +10,7 @@ public class Grid
 {
     private readonly HashSet<Appliance> _grid = new();
 
-    private uint _power;
-    /// <summary>
-    /// THe total power of the <see cref="Grid"/>
-    /// </summary>
-    private uint Power
-    {
-        get => _power;
-        init => _power = value < 0 ? throw new ArgumentOutOfRangeException(nameof(Power)) : value;
-    }
-
-    /// <summary>
-    /// Return the amount of power left in the <see cref="Grid"/>.
-    /// </summary>
-    public uint ResidualPower
-    {
-        get
-        {
-            Debug.Assert(Power >= 0);
-            return (uint)(Power - _grid.Where(a => a.IsOn).Sum(a => a.Power));
-        }
-    }
+    public uint ResidualPower { get; private set; }
 
     /// <summary>
     /// Determine if the <see cref="Appliance"/> is on the <see cref="Grid"/>.
@@ -42,8 +22,8 @@ public class Grid
     /// <summary>
     /// Create a new <see cref="Grid"/>.
     /// </summary>
-    /// <param name="power"></param>
-    public Grid(uint power) => Power = power;
+    /// <param name="power">The power the <see cref="Grid"/> can provide.</param>
+    public Grid(uint power) => ResidualPower = power;
 
     /// <summary>
     /// Add the given appliance to the <see cref="Grid"/>. 
@@ -63,6 +43,24 @@ public class Grid
     {
         bool success = _grid.Add(appliance);
         Debug.Assert(success is true);
+        if (appliance.IsOn)
+        {
+            Debug.Assert(appliance.Power <= ResidualPower);
+            ResidualPower -= appliance.Power;
+        }
+    }
+
+    internal void ApplianceIsTurnedOn(Appliance appliance)
+    {
+        Debug.Assert(_grid.Contains(appliance));
+        CheckForOverload(appliance);
+        ResidualPower -= appliance.Power;
+    }
+
+    internal void ApplianceIsTurnedOff(Appliance appliance)
+    {
+        Debug.Assert(_grid.Contains(appliance));
+        ResidualPower += appliance.Power;
     }
 
     /// <summary>
@@ -88,6 +86,7 @@ public class Grid
     {
         bool success = _grid.Remove(appliance);
         Debug.Assert(success is true);
+        ResidualPower += appliance.Power;
     }
 
 }
