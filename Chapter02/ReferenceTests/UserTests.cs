@@ -11,10 +11,10 @@ public class UserTests
 {
     [TestMethod]
     [ExpectedException(typeof(ArgumentNullException))]
-    public void ctor_EmptyString_ThrowsArgumentNullException() => _ = new User(" ");
+    public void Ctor_EmptyString_ThrowsArgumentNullException() => _ = new User(" ");
 
     [TestMethod]
-    public void ctor_CopyWithEmptyString_ThrowsArgumentNullException()
+    public void Ctor_CopyWithEmptyString_ThrowsArgumentNullException()
     {
         User user = new("Barry");
         _ = user with { Name = " " };

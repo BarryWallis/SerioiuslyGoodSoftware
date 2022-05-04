@@ -144,6 +144,7 @@ public class ContainerTests
         Assert.AreEqual(expected, actual2);
         Assert.AreEqual(expected, actual3);
     }
+
     [TestMethod]
     public void UseCaseTest()
     {

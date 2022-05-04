@@ -1,9 +1,9 @@
 ﻿
+using ContractsLib;
+
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-using ReferenceLib;
-
-namespace ReferenceTests;
+namespace ContractsTests;
 
 [TestClass]
 public class ContainerTests
@@ -67,16 +67,17 @@ public class ContainerTests
     }
 
     [TestMethod]
-    public void ConnectTo_ConnectThreeContainers_ReturnsSameAmountInAllThree()
+    [DataRow(12.0)]
+    [DataRow(0.9)]
+    public void ConnectTo_ConnectThreeContainers_ReturnsSameAmountInAllThree(double amountToAdd)
     {
-        const double amountToAdd = 12.0;
         Container container1 = new();
         Container container2 = new();
         Container container3 = new();
-        container1.AddWater(amountToAdd);
 
         container1.ConnectTo(container2);
         container2.ConnectTo(container3);
+        container1.AddWater(amountToAdd);
 
         Assert.AreEqual(amountToAdd / 3, container1.Amount);
         Assert.AreEqual(amountToAdd / 3, container2.Amount);

@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-
+﻿
 using BenchmarkDotNet.Attributes;
 
 namespace Experiment1;

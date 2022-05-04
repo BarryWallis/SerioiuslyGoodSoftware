@@ -15,7 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Chapter03\Exercise3Lib\Exercise3Lib.csproj" />
+    <ProjectReference Include="..\..\Chapter02\ReferenceTests\ReferenceTests.csproj" />
+    <ProjectReference Include="..\ContractsLib\ContractsLib.csproj" />
   </ItemGroup>
 
 </Project>

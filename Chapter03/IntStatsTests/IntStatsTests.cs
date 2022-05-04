@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Linq;
 
 using IntStatsLib;
-using Microsoft.VisualStudio.TestPlatform.Common.Utilities;
-using System.Linq;
+
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace IntStatsTests;
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace IntStatsLib;
+﻿namespace IntStatsLib;
 
 /// <summary>
 /// Report statstics on a list of integers.

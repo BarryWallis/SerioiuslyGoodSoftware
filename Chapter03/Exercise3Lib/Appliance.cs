@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Exercise3Lib;
+﻿namespace Exercise3Lib;
 public class Appliance
 {
     private Grid? _grid = null;
