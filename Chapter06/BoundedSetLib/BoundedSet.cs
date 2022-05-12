@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace BoundedSetLib;
+﻿namespace BoundedSetLib;
 
 /// <summary>
 /// A set with a fixed-maximum capacity that keeps track of the order its elements are inserted. Once the capacity is reached, 

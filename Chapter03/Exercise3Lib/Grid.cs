@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace Exercise3Lib;
+﻿namespace Exercise3Lib;
 public class Grid
 {
     private readonly HashSet<Appliance> _grid = new();

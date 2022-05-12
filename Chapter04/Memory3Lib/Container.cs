@@ -2,8 +2,8 @@
 
 public static class Container
 {
-    private static int[] _group = Array.Empty<int>();
-    private static float[] _amount = Array.Empty<float>();
+    private static readonly int[] _group = Array.Empty<int>();
+    private static readonly float[] _amount = Array.Empty<float>();
 
     public static int NewContainer()
     {

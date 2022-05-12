@@ -1,7 +1,4 @@
-﻿using System.Diagnostics;
-using System.Numerics;
-
-namespace GreatestCommonDivisorLib;
+﻿namespace GreatestCommonDivisorLib;
 
 public static class GreatestCommonDivisorClass
 {

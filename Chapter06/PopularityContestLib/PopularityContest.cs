@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace PopularityContestLib;
+﻿namespace PopularityContestLib;
 /// <summary>
 /// A popularity contest among a set of objects of the given type.
 /// </summary>

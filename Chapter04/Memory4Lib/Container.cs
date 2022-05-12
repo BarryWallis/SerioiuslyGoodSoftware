@@ -4,7 +4,7 @@ public static class Container
 {
     // If this is positive, it is an index + 1 to the next item; if negative it is the negative of the amount.
     // Zero is always an amount and never an index.
-    private static float[] _nextOrAmount = Array.Empty<float>();
+    private static readonly float[] _nextOrAmount = Array.Empty<float>();
 
     /// <summary>
     /// Create a new empty <see cref="Container"/> and return its id.

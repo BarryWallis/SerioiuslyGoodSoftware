@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace HighDuplicateMultiSetLib;
+﻿namespace HighDuplicateMultiSetLib;
 
 /// <summary>
 /// A set that can hold duplicate copies of an element.

@@ -1,6 +1,4 @@
-﻿using System;
-
-using GreatestCommonDivisorLib;
+﻿using GreatestCommonDivisorLib;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

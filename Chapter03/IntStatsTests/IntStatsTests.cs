@@ -1,6 +1,4 @@
-﻿using System.Linq;
-
-using IntStatsLib;
+﻿using IntStatsLib;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

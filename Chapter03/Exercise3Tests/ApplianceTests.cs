@@ -1,6 +1,4 @@
-﻿using System;
-
-using Exercise3Lib;
+﻿using Exercise3Lib;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

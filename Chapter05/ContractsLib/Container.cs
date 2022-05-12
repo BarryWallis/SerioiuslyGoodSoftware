@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace ContractsLib;
+﻿namespace ContractsLib;
 
 /// <summary>
 /// A water container.

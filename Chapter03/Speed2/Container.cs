@@ -9,11 +9,7 @@
 public class Container : IContainer
 {
     private static int _idCounter = 0;
-
-#pragma warning disable IDE0052 // Remove unread private members
     private readonly int _id;
-#pragma warning restore IDE0052 // Remove unread private members
-
     private Container _next;
 
     private double _amount = 0.0;

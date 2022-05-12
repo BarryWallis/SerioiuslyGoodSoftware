@@ -4,9 +4,7 @@ namespace Speed3;
 public record Container : IContainer
 {
     private static int _nextId = 0;
-#pragma warning disable IDE0052 // Remove unread private members
     private readonly int _id; // Added to make identifying individual nodes easier for debugging
-#pragma warning restore IDE0052 // Remove unread private members
     private int _size = 1;
     private double _amount = 0.0;
     private Container _parent;

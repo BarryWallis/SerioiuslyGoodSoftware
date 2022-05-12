@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using BoundedSetLib;
+﻿using BoundedSetLib;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

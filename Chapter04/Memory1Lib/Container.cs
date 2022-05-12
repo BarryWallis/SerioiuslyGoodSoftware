@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace Memory1Lib;
+﻿namespace Memory1Lib;
 
 public class Container : IContainer
 {

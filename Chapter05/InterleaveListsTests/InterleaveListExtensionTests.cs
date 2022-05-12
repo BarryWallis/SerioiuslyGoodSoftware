@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using InterleaveListLib;
+﻿using InterleaveListLib;
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

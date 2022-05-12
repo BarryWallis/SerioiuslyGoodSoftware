@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace InterleaveListLib;
+﻿namespace InterleaveListLib;
 
 /// <summary>
 /// Extension to inteleave two lists (e.g., create a new list with elements alternating from each source list).
@@ -19,9 +17,7 @@ public static class InterleaveListExtension
     {
         if (first.Count != second.Count)
         {
-#pragma warning disable CA2208 // Instantiate argument exceptions correctly
             throw new ArgumentException("Both lists must be the same length.", $"{nameof(first)} and {nameof(second)}");
-#pragma warning restore CA2208 // Instantiate argument exceptions correctly
         }
 
         IList<T> result = new List<T>();
