@@ -3,20 +3,17 @@ namespace Speed3;
 
 public record Container : IContainer
 {
-    private static int _nextId = 0;
-    private readonly int _id; // Added to make identifying individual nodes easier for debugging
+    //private static int _nextId = 0;
+    //private readonly int _id; // Added to make identifying individual nodes easier for debugging
     private int _size = 1;
     private double _amount = 0.0;
     private Container _parent;
 
     private bool IsRoot() => _parent == this;
 
-    public Container()
-    {
+    public Container() =>
         // You can tell the root because it is its own parent.
-        _parent = this;
-        _id = _nextId++;
-    }
+        _parent = this;//_id = _nextId++;
 
     /// <inheritdoc/>
     public double Amount

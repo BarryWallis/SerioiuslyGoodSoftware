@@ -124,25 +124,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Speed1Lib", "Chapter08\Spee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Speed1Tests", "Chapter08\Speed1Tests\Speed1Tests.csproj", "{C3409C28-22DC-4D27-9918-9950443BCDEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerSystemLib", "Chapter08\ContainerSystemLib\ContainerSystemLib.csproj", "{1E5B690C-231A-4325-A558-2EA7C0C58F23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerSystemLib", "Chapter08\ContainerSystemLib\ContainerSystemLib.csproj", "{1E5B690C-231A-4325-A558-2EA7C0C58F23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerSystemTests", "Chapter08\ContainerSystemTests\ContainerSystemTests.csproj", "{F677C449-6E1A-405B-831F-B39A01BDA307}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContainerSystemTests", "Chapter08\ContainerSystemTests\ContainerSystemTests.csproj", "{F677C449-6E1A-405B-831F-B39A01BDA307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLib", "Chapter08\RepositoryLib\RepositoryLib.csproj", "{28EC1751-6183-42B3-A2AA-164CBC21E1BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositoryLib", "Chapter08\RepositoryLib\RepositoryLib.csproj", "{28EC1751-6183-42B3-A2AA-164CBC21E1BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RespositoryTests", "Chapter08\RespositoryTest\RespositoryTests.csproj", "{52E8A73B-36A3-4CF5-89C4-72AF84F16BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RespositoryTests", "Chapter08\RespositoryTest\RespositoryTests.csproj", "{52E8A73B-36A3-4CF5-89C4-72AF84F16BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicPairLib", "Chapter08\AtomicPairLib\AtomicPairLib.csproj", "{886C781F-F73F-45C4-9F61-0DAADE73818E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtomicPairLib", "Chapter08\AtomicPairLib\AtomicPairLib.csproj", "{886C781F-F73F-45C4-9F61-0DAADE73818E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicPairTests", "Chapter08\AtomicPairTests\AtomicPairTests.csproj", "{7983E68E-08AC-4B02-A7FE-759C1828C8AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AtomicPairTests", "Chapter08\AtomicPairTests\AtomicPairTests.csproj", "{7983E68E-08AC-4B02-A7FE-759C1828C8AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialUserLib", "Chapter08\SocialUserLib\SocialUserLib.csproj", "{0DBDA047-544A-4EBB-84A3-E5E2204005E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialUserLib", "Chapter08\SocialUserLib\SocialUserLib.csproj", "{0DBDA047-544A-4EBB-84A3-E5E2204005E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialUserTests", "Chapter08\SocialUserTests\SocialUserTests.csproj", "{A2F174A4-9E79-4AF7-A198-E1D38D1CDE72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialUserTests", "Chapter08\SocialUserTests\SocialUserTests.csproj", "{A2F174A4-9E79-4AF7-A198-E1D38D1CDE72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLib", "Chapter08\TimeLib\TimeLib.csproj", "{E278EEE1-74B8-4EE4-A825-E3F45A8DD443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeLib", "Chapter08\TimeLib\TimeLib.csproj", "{E278EEE1-74B8-4EE4-A825-E3F45A8DD443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeTests", "Chapter08\TimeTests\TimeTests.csproj", "{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeTests", "Chapter08\TimeTests\TimeTests.csproj", "{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{93BAF37A-31E3-4BA9-84AD-EE026A732F4D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericLib", "Chapter09\GenericLib\GenericLib.csproj", "{CAE1D692-DA66-4604-A95E-7B5158CAFA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericTests", "Chapter09\GenericTests\GenericTests.csproj", "{832BD099-5571-41C3-AA68-2D9B4E56B9DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -394,6 +400,14 @@ Global
 		{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE1D692-DA66-4604-A95E-7B5158CAFA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE1D692-DA66-4604-A95E-7B5158CAFA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE1D692-DA66-4604-A95E-7B5158CAFA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE1D692-DA66-4604-A95E-7B5158CAFA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832BD099-5571-41C3-AA68-2D9B4E56B9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832BD099-5571-41C3-AA68-2D9B4E56B9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832BD099-5571-41C3-AA68-2D9B4E56B9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832BD099-5571-41C3-AA68-2D9B4E56B9DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -460,6 +474,8 @@ Global
 		{A2F174A4-9E79-4AF7-A198-E1D38D1CDE72} = {C4562BA8-54B7-43FA-8F1C-79DAEF5E7C39}
 		{E278EEE1-74B8-4EE4-A825-E3F45A8DD443} = {C4562BA8-54B7-43FA-8F1C-79DAEF5E7C39}
 		{05C6C90F-AE78-4244-8BFB-4066F3BC2D3B} = {C4562BA8-54B7-43FA-8F1C-79DAEF5E7C39}
+		{CAE1D692-DA66-4604-A95E-7B5158CAFA58} = {93BAF37A-31E3-4BA9-84AD-EE026A732F4D}
+		{832BD099-5571-41C3-AA68-2D9B4E56B9DB} = {93BAF37A-31E3-4BA9-84AD-EE026A732F4D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CE450091-81C2-4A5C-A9AC-F21B15BF900E}
